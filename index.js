@@ -9,8 +9,8 @@ function nowServing( line ) {
   }
 
   var first = line[0]
-  line.shift()
-  return `Currently serving ${first}.`
+  
+  return `Currently serving ${line.shift()}.`
 }
 
 function currentLine( line ) {
@@ -30,3 +30,6 @@ function currentLine( line ) {
 
   return newline
 }
+
+var line = ["Dan", "John", "Daly"]
+console.log(nowServing(line))
